@@ -1,0 +1,21 @@
+Viết chương trình ứng dụng quản lý lớp học và sinh viên( Sinhvieen tự su nghĩ bổ sung thêm chức năng để hoàn thiện 
+chương trình , các chức năng cơ bản : Thêm , Sửa , Xóa Hiển thị , Tìm kiếm , Sắp xếp, con trỏ hàm) với các lớp sau 
+(sử dụng Template và Exception& Object Relation)
+
+1) Lớp person : 
+- tên (string / char*);
+- tuổi (int);
+- địa chỉ(string,chả*);
+-giới tính(bool) true-nam, false - nữ
+2) Lớp Sinhvien kế thừa từ lớp Person 
+- mã sinh viên (string / char* ) : gồm 10 kí tự (0...9) ký tự đầu tiên không được viết bằng ký tự '0'
+- lớp (Lopsinhhoat)
+- điểm trung bình (double ) : có giá trị trong khoảng 0-4
+3)  Lớp Lecture : kế thừa từ lớp Person 
+- mã lecture (string or char* ) : 3 kí tự đầu là '102' các kí tự sau lấy theo tên quy tắc : vd : 102ltmhanh , 102dhphuong
+- cấp bậc của Lecture(string , char* ) : assignat professor , associate professor, full professor ...
+4) Lopsinhhoat  (sử dụng class Template)
+- Tên lớp sinh hoạt : string , char* 
+- Danh sách các đối tượng sinh viên : (sử dụng con trỏ trỏ đến mảng đối tượng)
+- Các chức năng quản lí ứng dụng sẽ viết trong lớp này 
+- Đa năng hóa toán tử nhập , xuất , toán tử truy cập [], và toán tử gán (=) cho lớp
